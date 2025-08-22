@@ -1,9 +1,10 @@
 import { Canvas } from "@react-three/fiber";
-import { Box, Stage, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { SCENE } from "./state/Config";
 import DaySky from "./components/DaySky";
 import Scene from "./components/Scene";
 import Lights from "./components/Lights";
+import MatchData from "./components/MatchData";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           maxPolarAngle={Math.PI / 2}
         />
       </Canvas>
+      <MatchData />
     </>
   );
 }
