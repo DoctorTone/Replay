@@ -1,11 +1,9 @@
-import { Box } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 
 const Scene = () => {
-  return (
-    <Box>
-      <meshStandardMaterial color="red" />
-    </Box>
-  );
+  const { scene } = useGLTF("./models/pitch.glb");
+
+  return <primitive object={scene} />;
 };
 
 export default Scene;
