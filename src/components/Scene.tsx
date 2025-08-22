@@ -1,9 +1,13 @@
-import { useGLTF } from "@react-three/drei";
+import Pitch from "./Pitch";
+import Ball from "./Ball";
 
 const Scene = () => {
-  const { scene } = useGLTF("./models/pitch.glb");
-
-  return <primitive object={scene} />;
+  return (
+    <>
+      <Pitch />
+      <Ball />
+    </>
+  );
 };
 
 export default Scene;
